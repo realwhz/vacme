@@ -24,11 +24,13 @@ let g:colors_name = "acme"
     let s:W1  = '#FFFFEC'
     let s:W2  = '#EEEEA7'
     let s:W3  = '#999957'
-    let s:W4  = '#424242'
+    let s:W4  = '#707470'
+    let s:W5  = '#424242'
     let s:WC1 = '15'
     let s:WC2 = '08'
     let s:WC3 = '07'
-    let s:WC4 = '238'
+    let s:WC4 = '236'
+    let s:WC5 = '238'
 
 " SHADES OF RED
     let s:R1  = '#F8E7E7'
@@ -146,27 +148,27 @@ hi!  MatchParen    term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  
 " {{{ Interface Colors
 " *********************************************************
 
-exe "hi! Normal"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W1    ." ctermbg=".s:WC1
-exe "hi! Visual"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W2    ." ctermbg=".s:WC2
+exe "hi! Normal"        ." guifg=".s:W5    ." ctermfg=".s:WC5    ." guibg=".s:W1    ." ctermbg=".s:WC1
+exe "hi! Visual"        ." guifg=".s:W5    ." ctermfg=".s:WC5    ." guibg=".s:W2    ." ctermbg=".s:WC2
 exe "hi! NonText"       ." guifg=".s:W3    ." ctermfg=".s:WC3
-exe "hi! StatusLine"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1    ." cterm=bold,underline"    ." gui=bold,underline"
-exe "hi! StatusLineNC"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
+exe "hi! StatusLine"    ." guifg=".s:W5    ." ctermfg=".s:WC5    ." guibg=".s:C1    ." ctermbg=".s:CC1    ." cterm=bold,underline"    ." gui=bold,underline"
+exe "hi! StatusLineNC"  ." guifg=".s:W5    ." ctermfg=".s:WC5    ." guibg=".s:C1    ." ctermbg=".s:CC1
 exe "hi! LineNr"        ." guifg=".s:W3    ." ctermfg=".s:WC3    ." guibg=".s:Y1    ." ctermbg=".s:WC1
 exe "hi! CursorLineNr"  ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
-exe "hi! VertSplit"     ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
+exe "hi! VertSplit"     ." guifg=".s:W5    ." ctermfg=".s:WC5    ." guibg=".s:C1    ." ctermbg=".s:CC1
 exe "hi! Folded"        ." guifg=".s:Y3    ." ctermfg=".s:YC3
 exe "hi! FoldColumn"    ." guifg=".s:Y2    ." ctermfg=".s:YC2    ." guibg=".s:Y1    ." ctermbg=".s:YC1
 exe "hi! TabLineSel"    ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
-exe "hi! Comment"       ." guifg=#707470"  ." ctermfg=236"       ." guibg=".s:W1    ." ctermbg=".s:WC1
+exe "hi! Comment"       ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W1    ." ctermbg=".s:WC1
 
-exe "hi! Search"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W2    ." ctermbg=".s:WC2
+exe "hi! Search"        ." guifg=".s:W5    ." ctermfg=".s:WC5    ." guibg=".s:W2    ." ctermbg=".s:WC2
 exe "hi! IncSearch"     ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
 
 exe "hi! WildMenu"      ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
 exe "hi! Pmenu"         ." guifg=".s:G3    ." ctermfg=".s:GC3    ." guibg=".s:G1    ." ctermbg=".s:GC1
-exe "hi! PmenuSel"      ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:G2    ." ctermbg=".s:GC2
+exe "hi! PmenuSel"      ." guifg=".s:W5    ." ctermfg=".s:WC5    ." guibg=".s:G2    ." ctermbg=".s:GC2
 exe "hi! PmenuSbar"     ." guifg=".s:G1    ." ctermfg=".s:GC1    ." guibg=".s:G3    ." ctermbg=".s:GC3
-exe "hi! PmenuThumb"    ." guifg=".s:G1    ." ctermfg=".s:GC1    ." guibg=".s:W4    ." ctermbg=".s:WC4
+exe "hi! PmenuThumb"    ." guifg=".s:G1    ." ctermfg=".s:GC1    ." guibg=".s:W5    ." ctermbg=".s:WC5
 
 exe "hi! CursorColumn"  ." guibg=".s:G1    ." ctermbg=".s:GC1
 exe "hi! CursorLine"    ." guibg=".s:G1    ." ctermbg=".s:GC1
